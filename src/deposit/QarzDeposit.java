@@ -3,8 +3,26 @@ package deposit;
 import java.math.BigDecimal;
 import java.math.MathContext;
 
+/**
+ *@author Bahar Saffarian <zohreh.saffarian@gmail.com>
+ * @version 1
+ * @since 2015-04-21
+ */
 public class QarzDeposit extends Deposit {
+
+	/**
+	 * contains the interest rate value needed to compute the deposit balance value {@link #depositBalance}
+	 */
 	final static float interestRate=0;
+
+	/**
+	 * this object constructor
+	 * Calls the super class constructor to initialize this class fields
+	 * @param cn Customer Number
+	 * @param db Deposit Balance
+	 * @param dd Duration in Days
+	 * @throws WrongInputException if the deposit balance is negative or the duration in days is zero or negative
+	 */
 	public QarzDeposit(long cn, String db, long dd)throws WrongInputException{
 		super(cn,db,dd);
 	}
@@ -15,9 +33,6 @@ public class QarzDeposit extends Deposit {
 		setPayedInterest(pi.toString());
 	}
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 
-	}
 
 }
