@@ -9,7 +9,7 @@
 <customerNumber>48483</customerNumber>
 <depositType>Qarz</depositType>
 <depositBalance>145000</depositBalance>
-<durationInDays>38</durationInDays>
+<durationInDays>-38</durationInDays>
 </deposit>
 <deposit>
 <customerNumber>658951</customerNumber>

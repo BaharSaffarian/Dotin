@@ -1,11 +1,8 @@
-package depositPayedInterestCalculator;
-
-
 public abstract class DepositType {
 
-    private float interestRate;
+    private int interestRate;
 
-    DepositType(float interestRate) {
+    DepositType(int interestRate) {
         this.interestRate = interestRate;
     }
 
